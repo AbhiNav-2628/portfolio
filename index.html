@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Gude Venkat Abhinav, a CSE (AI & ML) student building intelligent systems and useful software." />
+    <meta name="theme-color" content="#050506" />
+    <title>Gude Venkat Abhinav — Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <canvas id="particle-field" aria-hidden="true"></canvas>
+    <div class="cursor-orb" aria-hidden="true"><span></span></div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="Gude Venkat Abhinav, back to top">gva.dev</a>
+      <a class="header-email" href="mailto:venkatgabhinav@gmail.com">venkatgabhinav@gmail.com</a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+      </button>
+      <nav id="site-nav" aria-label="Primary navigation">
+        <a href="#about"><span>01</span> About</a>
+        <a href="#work"><span>02</span> Work</a>
+        <a href="#journey"><span>03</span> Journey</a>
+        <a href="#contact"><span>04</span> Contact</a>
+      </nav>
+    </header>
+
+    <aside class="social-rail" aria-label="Social links">
+      <a href="https://github.com/AbhiNav-2628" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+      <a href="https://www.linkedin.com/in/venkatabhinav/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+      <a href="mailto:venkatgabhinav@gmail.com" aria-label="Email">@</a>
+    </aside>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-pointer-light" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow intro-item">Hello, I’m</p>
+          <h1 id="hero-title" class="intro-item"><span>Gude Venkat</span><strong>Abhinav.</strong></h1>
+          <p class="hero-role intro-item">A software developer in progress, building intelligent systems with a practical point of view.</p>
+        </div>
+
+        <div class="core-wrap" aria-hidden="true">
+          <div class="core-glow"></div>
+          <div class="orbit orbit-one"><i></i></div>
+          <div class="orbit orbit-two"><i></i></div>
+          <div class="orbit orbit-three"><i></i></div>
+          <div class="neural-core">
+            <div class="core-top"></div>
+            <div class="core-surface"><span></span><span></span><span></span></div>
+            <div class="core-display"><b>01</b><em>BUILD</em></div>
+          </div>
+          <div class="core-shadow"></div>
+        </div>
+
+        <div class="hero-meta intro-item">
+          <span>Scroll to explore</span>
+          <div class="hero-links">
+            <a href="#work">Selected projects <b>↓</b></a>
+            <a class="cv-button" href="Gude-Venkat-Abhinav-CV.docx" target="_blank" rel="noreferrer">View CV <b>↗</b></a>
+          </div>
+        </div>
+        <p class="hero-stamp" aria-hidden="true">SYSTEMS • SOFTWARE • AI / ML • SYSTEMS • SOFTWARE • AI / ML •</p>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-index">01 <span>About</span></div>
+        <div class="about-layout">
+          <h2 id="about-title">I turn curious<br /><em>questions</em> into<br />working systems.</h2>
+          <div class="about-copy">
+            <p>I’m a second-year Computer Science &amp; Engineering student specialising in AI &amp; ML at Lovely Professional University. I’m drawn to the moment an idea crosses over into something you can actually use.</p>
+            <p>That is why I like projects that connect code to the physical world: a sensor that makes a decision, a voice interface that takes action, or a small tool that removes friction from someone’s day.</p>
+            <dl class="quick-facts">
+              <div><dt>Based in</dt><dd>Punjab, India</dd></div>
+              <div><dt>Learning</dt><dd>AI / ML &amp; software</dd></div>
+              <div><dt>Currently</dt><dd>Building &amp; iterating</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div class="section-index">02 <span>Selected work</span></div>
+          <h2 id="work-title">Projects with<br /><em>a pulse.</em></h2>
+          <p>Real ideas, made tangible through hardware, software, and a willingness to learn by doing.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card project-harvest">
+            <div class="project-number">01</div>
+            <div class="project-image">
+              <img src="smart-harvest-protection-system.jpg" alt="Smart Harvest Protection System prototype with a motorised roof, sensors and plants" loading="lazy" />
+              <span class="image-wash"></span>
+            </div>
+            <div class="project-content">
+              <p class="project-kind">IoT / Automation · 2026</p>
+              <h3>Smart Harvest<br />Protection System</h3>
+              <p>A crop-protection prototype that moves its roof in response to live rain and fire conditions, while monitoring the enclosure environment.</p>
+              <ul class="project-tags"><li>ESP32</li><li>Arduino</li><li>C/C++</li><li>Sensors</li></ul>
+              <button class="project-more" type="button" data-project-trigger="harvest" aria-expanded="false" aria-controls="project-harvest-detail">Explore build <span>↗</span></button>
+            </div>
+            <div class="project-detail" id="project-harvest-detail" hidden>
+              <p>Rain and fire sensors drive the roof via a DC motor and relay. DHT11 and LDR sensors report humidity and light, while an ESP32 streams live data to a Blynk dashboard.</p>
+            </div>
+          </article>
+
+          <article class="project-card project-assistant">
+            <div class="project-number">02</div>
+            <div class="assistant-screen" aria-hidden="true">
+              <div class="screen-bar"><span></span><span></span><span></span><b>abhinav@assistant</b></div>
+              <div class="screen-code"><p><i>01</i> listening_for_wake_word()</p><p><i>02</i> <span>signal detected</span></p><p><i>03</i> execute(command)</p><p><i>04</i> <span>ollama response ready_</span></p></div>
+              <div class="screen-orb"><b></b><b></b><b></b></div>
+            </div>
+            <div class="project-content">
+              <p class="project-kind">Voice AI / Local tools · 2026</p>
+              <h3>Personal<br />AI Assistant</h3>
+              <p>A locally run, voice-first assistant built to act—not just answer. It listens, understands a spoken task, and can control applications from Ubuntu.</p>
+              <ul class="project-tags"><li>Python</li><li>Ollama</li><li>Ubuntu</li><li>Speech</li></ul>
+              <button class="project-more" type="button" data-project-trigger="assistant" aria-expanded="false" aria-controls="project-assistant-detail">Explore build <span>↗</span></button>
+            </div>
+            <div class="project-detail" id="project-assistant-detail" hidden>
+              <p>The assistant combines wake-word activation, speech recognition, text-to-speech, and local AI responses through Ollama. It can run terminal tasks and launch applications on command.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills" id="toolkit" aria-labelledby="skills-title">
+        <div class="section-index">03 <span>Toolkit</span></div>
+        <div class="skills-intro"><h2 id="skills-title">The <em>tools</em> behind<br />the experiments.</h2><p>Technologies I have learned and used—no progress bars, no theatre.</p></div>
+        <div class="skill-cloud" aria-label="Skills">
+          <span>Python</span><span>C++</span><span>HTML / CSS</span><span>JavaScript</span><span>scikit-learn</span><span>Flask</span><span>MySQL</span><span>Git / GitHub</span><span>Arduino</span><span>ESP32</span><span>Ollama</span><span>Tableau</span><span>Jupyter</span><span>DSA</span>
+        </div>
+      </section>
+
+      <section class="section journey" id="journey" aria-labelledby="journey-title">
+        <div class="journey-heading"><div class="section-index">04 <span>Journey</span></div><h2 id="journey-title">In motion,<br /><em>on purpose.</em></h2></div>
+        <ol class="journey-list">
+          <li><time>2025 — now</time><div><h3>B.Tech, Computer Science &amp; Engineering (AI &amp; ML)</h3><p>Lovely Professional University · Second year · CGPA 7.8</p></div><span>01</span></li>
+          <li><time>2026</time><div><h3>Python Programming Language</h3><p>Mind Luster · Course completion</p></div><a href="mindluster-python-certificate.jpg" target="_blank" rel="noreferrer">View ↗</a></li>
+          <li><time>2026</time><div><h3>Introduction to Cyber Security</h3><p>Infosys Springboard · Course completion</p></div><a href="infosys-cybersecurity-certificate.jpg" target="_blank" rel="noreferrer">View ↗</a></li>
+          <li><time>2025</time><div><h3>Community Development Project — TCTC</h3><p>Supported 250 school students through the participation and registration process.</p></div><a href="cdp-certificate.pdf" target="_blank" rel="noreferrer">View ↗</a></li>
+        </ol>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <p class="contact-kicker">Have an idea with a real-world edge?</p>
+        <h2 id="contact-title">Let’s make<br /><em>something useful.</em></h2>
+        <div class="contact-actions" aria-label="Contact options">
+          <a class="contact-email" href="mailto:venkatgabhinav@gmail.com">venkatgabhinav@gmail.com <span>↗</span></a>
+          <a class="contact-social" href="https://github.com/AbhiNav-2628" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          <a class="contact-social" href="https://www.linkedin.com/in/venkatabhinav/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+        </div>
+        <div class="contact-footer"><span>Gude Venkat Abhinav · 2026</span><span>Built with curiosity &amp; lots of iteration.</span></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
