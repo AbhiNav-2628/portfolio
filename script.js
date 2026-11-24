@@ -171,7 +171,7 @@ if (hasFinePointer && cursorOrb) {
     element.addEventListener("pointerleave", () => cursorOrb.classList.remove("is-hover"));
   });
 
-  document.querySelectorAll(".project-more, .cv-button, .contact-actions a").forEach((element) => {
+  document.querySelectorAll(".project-more, .project-ext-link, .cv-button, .contact-actions a").forEach((element) => {
     element.addEventListener("pointermove", (event) => {
       const bounds = element.getBoundingClientRect();
       const shiftX = ((event.clientX - bounds.left) / bounds.width - 0.5) * 7;

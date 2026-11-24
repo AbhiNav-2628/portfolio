@@ -27,8 +27,9 @@
       <nav id="site-nav" aria-label="Primary navigation">
         <a href="#about"><span>01</span> About</a>
         <a href="#work"><span>02</span> Work</a>
-        <a href="#journey"><span>03</span> Journey</a>
-        <a href="#contact"><span>04</span> Contact</a>
+        <a href="#toolkit"><span>03</span> Toolkit</a>
+        <a href="#journey"><span>04</span> Journey</a>
+        <a href="#contact"><span>05</span> Contact</a>
       </nav>
     </header>
 
@@ -94,8 +95,82 @@
         </div>
 
         <div class="project-list">
-          <article class="project-card project-harvest">
+          <article class="project-card project-crop-stress">
             <div class="project-number">01</div>
+            <div class="project-image">
+              <img src="crop-stress-advisor.png" alt="Crop-Stress Diagnosis and Advisory Decision System multispectral NDVI vegetation index analysis map" loading="lazy" />
+              <span class="image-wash"></span>
+            </div>
+            <div class="project-content">
+              <p class="project-kind">AI / Remote Sensing · SIH 2025</p>
+              <h3>Crop-Stress Diagnosis<br />&amp; Advisory System</h3>
+              <p>A full-pipeline decision-support platform transforming multispectral imagery into 5 vegetation indices, uncertainty-gated AI stress diagnoses, and agronomic field advisories.</p>
+              <ul class="project-tags"><li>PyTorch</li><li>Streamlit</li><li>Multispectral</li><li>Scikit-learn</li><li>Explainable AI</li></ul>
+              <div class="project-links-row">
+                <button class="project-more" type="button" data-project-trigger="crop-stress" aria-expanded="false" aria-controls="project-crop-stress-detail">Explore build <span>↗</span></button>
+                <a class="project-ext-link" href="https://crop-stress-advisor.streamlit.app/" target="_blank" rel="noreferrer">Live App <span>↗</span></a>
+                <a class="project-ext-link" href="https://github.com/AbhiNav-2628/crop-stress-advisor" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+              </div>
+            </div>
+            <div class="project-detail" id="project-crop-stress-detail" hidden>
+              <p>Built for Smart India Hackathon 2025 (SIH25099). Features dual-branch PyTorch CNN and logistic regression models, Explainable AI (Grad-CAM canopy heatmaps and linear attributions), uncertainty gating that safely flags ambiguous inputs, and automated report exports in JSON, CSV, and PDF.</p>
+            </div>
+          </article>
+
+          <article class="project-card project-gesture">
+            <div class="project-number">02</div>
+            <div class="gesture-screen" aria-hidden="true">
+              <div class="screen-bar"><span></span><span></span><span></span><b>abhinav@vision-desktop</b></div>
+              <div class="screen-code">
+                <p><i>01</i> cv2.VideoCapture(cam=0, 60fps)</p>
+                <p><i>02</i> <span>landmarks: 21 points detected</span></p>
+                <p><i>03</i> cursor_map(index_tip) -> screen(x, y)</p>
+                <p><i>04</i> <span>pinch_detected: left_click active_</span></p>
+              </div>
+              <div class="screen-hud"><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-content">
+              <p class="project-kind">Computer Vision / HCI · 2026</p>
+              <h3>Gesture Control<br />Desktop System</h3>
+              <p>A low-latency, touchless desktop controller mapping bare-hand camera gestures to full OS cursor manipulation, dual-pinch clicks, dragging, and adaptive scrolling.</p>
+              <ul class="project-tags"><li>Python</li><li>MediaPipe</li><li>OpenCV</li><li>PyAutoGUI</li></ul>
+              <div class="project-links-row">
+                <button class="project-more" type="button" data-project-trigger="gesture" aria-expanded="false" aria-controls="project-gesture-detail">Explore build <span>↗</span></button>
+              </div>
+            </div>
+            <div class="project-detail" id="project-gesture-detail" hidden>
+              <p>Utilizes MediaPipe HandLandmarker with 21 3D hand coordinates and OpenCV. Incorporates dynamic landmark distance ratios, deadzone filtering, drag-and-hold timers, dual-pinch left/right clicks, and precision cursor mode via SHIFT.</p>
+            </div>
+          </article>
+
+          <article class="project-card project-organizer">
+            <div class="project-number">03</div>
+            <div class="organizer-screen" aria-hidden="true">
+              <div class="screen-bar"><span></span><span></span><span></span><b>abhinav@smart-file-organizer: v2.0</b></div>
+              <div class="screen-code">
+                <p><i>01</i> scan_directory(target="Downloads")</p>
+                <p><i>02</i> <span>categories.json: 9 rules loaded</span></p>
+                <p><i>03</i> generate_preview(staged_moves=48)</p>
+                <p><i>04</i> <span>execute_sort() -> undo_log ready_</span></p>
+              </div>
+              <div class="screen-matrix"><b></b><b></b><b></b><b></b></div>
+            </div>
+            <div class="project-content">
+              <p class="project-kind">Desktop Automation / Utility · 2026</p>
+              <h3>Smart File<br />Organizer V2.0</h3>
+              <p>A fast, rule-driven desktop automation utility designed to eliminate file clutter by sorting directories into typed categories with live previews and safe rollback logging.</p>
+              <ul class="project-tags"><li>Python</li><li>Tkinter</li><li>File System</li><li>Automation</li></ul>
+              <div class="project-links-row">
+                <button class="project-more" type="button" data-project-trigger="organizer" aria-expanded="false" aria-controls="project-organizer-detail">Explore build <span>↗</span></button>
+              </div>
+            </div>
+            <div class="project-detail" id="project-organizer-detail" hidden>
+              <p>Provides clean GUI-based folder organization with customizable JSON rule mappings across 9 categories, duplicate file handling, audit logging, and two-tier rollback functionality (Undo Last Run and Selective Undo).</p>
+            </div>
+          </article>
+
+          <article class="project-card project-harvest">
+            <div class="project-number">04</div>
             <div class="project-image">
               <img src="smart-harvest-protection-system.jpg" alt="Smart Harvest Protection System prototype with a motorised roof, sensors and plants" loading="lazy" />
               <span class="image-wash"></span>
@@ -105,7 +180,9 @@
               <h3>Smart Harvest<br />Protection System</h3>
               <p>A crop-protection prototype that moves its roof in response to live rain and fire conditions, while monitoring the enclosure environment.</p>
               <ul class="project-tags"><li>ESP32</li><li>Arduino</li><li>C/C++</li><li>Sensors</li></ul>
-              <button class="project-more" type="button" data-project-trigger="harvest" aria-expanded="false" aria-controls="project-harvest-detail">Explore build <span>↗</span></button>
+              <div class="project-links-row">
+                <button class="project-more" type="button" data-project-trigger="harvest" aria-expanded="false" aria-controls="project-harvest-detail">Explore build <span>↗</span></button>
+              </div>
             </div>
             <div class="project-detail" id="project-harvest-detail" hidden>
               <p>Rain and fire sensors drive the roof via a DC motor and relay. DHT11 and LDR sensors report humidity and light, while an ESP32 streams live data to a Blynk dashboard.</p>
@@ -113,7 +190,7 @@
           </article>
 
           <article class="project-card project-assistant">
-            <div class="project-number">02</div>
+            <div class="project-number">05</div>
             <div class="assistant-screen" aria-hidden="true">
               <div class="screen-bar"><span></span><span></span><span></span><b>abhinav@assistant</b></div>
               <div class="screen-code"><p><i>01</i> listening_for_wake_word()</p><p><i>02</i> <span>signal detected</span></p><p><i>03</i> execute(command)</p><p><i>04</i> <span>ollama response ready_</span></p></div>
@@ -124,7 +201,9 @@
               <h3>Personal<br />AI Assistant</h3>
               <p>A locally run, voice-first assistant built to act—not just answer. It listens, understands a spoken task, and can control applications from Ubuntu.</p>
               <ul class="project-tags"><li>Python</li><li>Ollama</li><li>Ubuntu</li><li>Speech</li></ul>
-              <button class="project-more" type="button" data-project-trigger="assistant" aria-expanded="false" aria-controls="project-assistant-detail">Explore build <span>↗</span></button>
+              <div class="project-links-row">
+                <button class="project-more" type="button" data-project-trigger="assistant" aria-expanded="false" aria-controls="project-assistant-detail">Explore build <span>↗</span></button>
+              </div>
             </div>
             <div class="project-detail" id="project-assistant-detail" hidden>
               <p>The assistant combines wake-word activation, speech recognition, text-to-speech, and local AI responses through Ollama. It can run terminal tasks and launch applications on command.</p>
@@ -137,7 +216,7 @@
         <div class="section-index">03 <span>Toolkit</span></div>
         <div class="skills-intro"><h2 id="skills-title">The <em>tools</em> behind<br />the experiments.</h2><p>Technologies I have learned and used—no progress bars, no theatre.</p></div>
         <div class="skill-cloud" aria-label="Skills">
-          <span>Python</span><span>C++</span><span>HTML / CSS</span><span>JavaScript</span><span>scikit-learn</span><span>Flask</span><span>MySQL</span><span>Git / GitHub</span><span>Arduino</span><span>ESP32</span><span>Ollama</span><span>Tableau</span><span>Jupyter</span><span>DSA</span>
+          <span>Python</span><span>C / C++</span><span>PyTorch</span><span>MediaPipe</span><span>OpenCV</span><span>scikit-learn</span><span>Streamlit</span><span>PyAutoGUI</span><span>HTML / CSS</span><span>JavaScript</span><span>Tkinter</span><span>ESP32</span><span>Arduino</span><span>Ollama</span><span>MySQL</span><span>Flask</span><span>Git / GitHub</span><span>DSA</span>
         </div>
       </section>
 
@@ -145,6 +224,7 @@
         <div class="journey-heading"><div class="section-index">04 <span>Journey</span></div><h2 id="journey-title">In motion,<br /><em>on purpose.</em></h2></div>
         <ol class="journey-list">
           <li><time>2025 — now</time><div><h3>B.Tech, Computer Science &amp; Engineering (AI &amp; ML)</h3><p>Lovely Professional University · Second year · CGPA 7.8</p></div><span>01</span></li>
+          <li><time>2026</time><div><h3>C Programming Language</h3><p>Lovely Professional University &amp; iamneo · 150 Hours Course Completion</p></div><a href="c-language-certificate.pdf" target="_blank" rel="noreferrer">View ↗</a></li>
           <li><time>2026</time><div><h3>Python Programming Language</h3><p>Mind Luster · Course completion</p></div><a href="mindluster-python-certificate.jpg" target="_blank" rel="noreferrer">View ↗</a></li>
           <li><time>2026</time><div><h3>Introduction to Cyber Security</h3><p>Infosys Springboard · Course completion</p></div><a href="infosys-cybersecurity-certificate.jpg" target="_blank" rel="noreferrer">View ↗</a></li>
           <li><time>2025</time><div><h3>Community Development Project — TCTC</h3><p>Supported 250 school students through the participation and registration process.</p></div><a href="cdp-certificate.pdf" target="_blank" rel="noreferrer">View ↗</a></li>
